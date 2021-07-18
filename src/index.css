@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Noto Sans", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+	height: 100vh;
+	background: teal;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	padding: 4rem;
+}
+
+.audio-player {
+	display: flex;
+	gap: 2rem;
+}
+
+.grid {
+	border: 2px solid;
+	border-radius: 0.8rem;
+	width: 16rem;
+	height: 12rem;
+	padding: 1rem;
+}
+
+.audio,
+.account-info,
+.make-a-call {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.audio > img {
+	width: 6rem;
+	height: 6rem;
+	border: 2px solid black;
+	padding: 1rem;
+	border-radius: 50%;
+	filter: invert(100%) sepia(0%) saturate(7418%) hue-rotate(163deg) brightness(120%) contrast(91%);
+}
+
+.options {
+	display: flex;
+	gap: 2rem;
+}
+
+input {
+	height: 1rem;
+	padding: 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0 2px teal, 0 0 0 4px white;
+	outline: none;
+}
+
+input::placeholder {
+	color: teal;
+}
+
+button {
+	width: 6rem;
+	height: 2rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0 2px teal, 0 0 0 4px white;
+	cursor: pointer;
+	color: teal;
+}
+
+button:hover {
+	background: teal;
+	color: white;
+}
+
+.notification {
+	border: 2px solid;
+	border-radius: 0.5rem;
+	padding: 1rem;
+}
+
+.row {
+	display: flex;
+	gap: 2rem;
 }
